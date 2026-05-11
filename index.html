@@ -928,10 +928,7 @@ body {
     <!-- メイン -->
     <div class="i-card">
       <div class="i-img tall">
-        <div class="img-placeholder">
-          <div class="img-placeholder-icon"><i class="ti ti-photo"></i></div>
-          <div class="img-placeholder-label">Photo · 800 × 560</div>
-        </div>
+        <img src="images/interview-yamada.jpg" alt="山田花子さん" style="width:100%;height:100%;object-fit:cover;display:block;">
         <div class="i-tag">弥彦</div>
       </div>
       <div class="i-body">
@@ -945,10 +942,7 @@ body {
     <div class="side-cards">
       <div class="i-card">
         <div class="i-img short">
-          <div class="img-placeholder">
-            <div class="img-placeholder-icon"><i class="ti ti-photo"></i></div>
-            <div class="img-placeholder-label">Photo · 400 × 340</div>
-          </div>
+          <img src="images/interview-suzuki.jpg" alt="鈴木一郎さん" style="width:100%;height:100%;object-fit:cover;display:block;">
           <div class="i-tag t2">岩室</div>
         </div>
         <div class="i-body">
@@ -959,10 +953,7 @@ body {
       </div>
       <div class="i-card">
         <div class="i-img short">
-          <div class="img-placeholder">
-            <div class="img-placeholder-icon"><i class="ti ti-photo"></i></div>
-            <div class="img-placeholder-label">Photo · 400 × 340</div>
-          </div>
+          <img src="images/interview-tanaka.jpg" alt="田中浩二さん" style="width:100%;height:100%;object-fit:cover;display:block;">
           <div class="i-tag">弥彦</div>
         </div>
         <div class="i-body">
@@ -976,10 +967,7 @@ body {
     <div class="side-cards">
       <div class="i-card">
         <div class="i-img short">
-          <div class="img-placeholder">
-            <div class="img-placeholder-icon"><i class="ti ti-photo"></i></div>
-            <div class="img-placeholder-label">Photo · 400 × 340</div>
-          </div>
+          <img src="images/interview-sato.jpg" alt="佐藤真由さん" style="width:100%;height:100%;object-fit:cover;display:block;">
           <div class="i-tag t2">岩室</div>
         </div>
         <div class="i-body">
@@ -990,10 +978,7 @@ body {
       </div>
       <div class="i-card">
         <div class="i-img short">
-          <div class="img-placeholder">
-            <div class="img-placeholder-icon"><i class="ti ti-photo"></i></div>
-            <div class="img-placeholder-label">Photo · 400 × 340</div>
-          </div>
+          <img src="images/interview-takahashi.jpg" alt="高橋美奈さん" style="width:100%;height:100%;object-fit:cover;display:block;">
           <div class="i-tag">弥彦</div>
         </div>
         <div class="i-body">
@@ -1223,18 +1208,18 @@ body {
 <script>
 /* ===================== DATA ===================== */
 const spots = [
-  {id:1, name:'弥彦神社',         area:'弥彦', areaKey:'y', type:'神社・観光',    cat:'sight', icon:'ti-building-temple'},
-  {id:2, name:'弥彦山ロープウェイ', area:'弥彦', areaKey:'y', type:'観光・自然',    cat:'sight', icon:'ti-aerial-lift'},
-  {id:3, name:'彌彦温泉 湯神社',   area:'弥彦', areaKey:'y', type:'温泉・パワスポ', cat:'onsen', icon:'ti-droplet'},
-  {id:4, name:'越後の里 旬彩',     area:'弥彦', areaKey:'y', type:'食事・郷土料理', cat:'food',  icon:'ti-bowl-chopsticks'},
-  {id:5, name:'旅館 明治屋',       area:'弥彦', areaKey:'y', type:'宿泊・温泉',    cat:'onsen', icon:'ti-home-2'},
-  {id:6, name:'弥彦の丘美術館',    area:'弥彦', areaKey:'y', type:'文化・観光',    cat:'sight', icon:'ti-palette'},
-  {id:7, name:'岩室温泉 いさりび', area:'岩室', areaKey:'i', type:'日帰り温泉',    cat:'onsen', icon:'ti-droplet'},
-  {id:8, name:'角屋旅館',          area:'岩室', areaKey:'i', type:'宿泊・温泉',    cat:'onsen', icon:'ti-home-2'},
-  {id:9, name:'日本海食堂 浪漫',   area:'岩室', areaKey:'i', type:'食事・海鮮',    cat:'food',  icon:'ti-fish'},
-  {id:10,name:'岩室神社',          area:'岩室', areaKey:'i', type:'神社',          cat:'sight', icon:'ti-building-temple'},
-  {id:11,name:'潟東の海岸',        area:'岩室', areaKey:'i', type:'自然・散策',    cat:'sight', icon:'ti-wave-sine'},
-  {id:12,name:'地酒 越後蔵元',     area:'岩室', areaKey:'i', type:'食事・地酒',    cat:'food',  icon:'ti-bottle'},
+  {id:1,  name:'弥彦神社',         area:'弥彦', areaKey:'y', type:'神社・観光',    cat:'sight', icon:'ti-building-temple', img:'images/spot-yahiko-shrine.jpg'},
+  {id:2,  name:'弥彦山ロープウェイ', area:'弥彦', areaKey:'y', type:'観光・自然',    cat:'sight', icon:'ti-aerial-lift',      img:'images/spot-yahiko-ropeway.jpg'},
+  {id:3,  name:'彌彦温泉 湯神社',   area:'弥彦', areaKey:'y', type:'温泉・パワスポ', cat:'onsen', icon:'ti-droplet',          img:'images/spot-yahiko-onsen.jpg'},
+  {id:4,  name:'越後の里 旬彩',     area:'弥彦', areaKey:'y', type:'食事・郷土料理', cat:'food',  icon:'ti-bowl-chopsticks', img:'images/spot-yahiko-food.jpg'},
+  {id:5,  name:'旅館 明治屋',       area:'弥彦', areaKey:'y', type:'宿泊・温泉',    cat:'onsen', icon:'ti-home-2',           img:'images/spot-yahiko-ryokan.jpg'},
+  {id:6,  name:'弥彦の丘美術館',    area:'弥彦', areaKey:'y', type:'文化・観光',    cat:'sight', icon:'ti-palette',          img:'images/spot-yahiko-art.jpg'},
+  {id:7,  name:'岩室温泉 いさりび', area:'岩室', areaKey:'i', type:'日帰り温泉',    cat:'onsen', icon:'ti-droplet',          img:'images/spot-iwamuro-onsen.jpg'},
+  {id:8,  name:'角屋旅館',          area:'岩室', areaKey:'i', type:'宿泊・温泉',    cat:'onsen', icon:'ti-home-2',           img:'images/spot-iwamuro-ryokan.jpg'},
+  {id:9,  name:'日本海食堂 浪漫',   area:'岩室', areaKey:'i', type:'食事・海鮮',    cat:'food',  icon:'ti-fish',            img:'images/spot-iwamuro-food.jpg'},
+  {id:10, name:'岩室神社',          area:'岩室', areaKey:'i', type:'神社',          cat:'sight', icon:'ti-building-temple', img:'images/spot-iwamuro-shrine.jpg'},
+  {id:11, name:'潟東の海岸',        area:'岩室', areaKey:'i', type:'自然・散策',    cat:'sight', icon:'ti-wave-sine',       img:'images/spot-iwamuro-sea.jpg'},
+  {id:12, name:'地酒 越後蔵元',     area:'岩室', areaKey:'i', type:'食事・地酒',    cat:'food',  icon:'ti-bottle',          img:'images/spot-iwamuro-sake.jpg'},
 ];
 
 const TIMES = ['09:00','10:30','12:00','13:30','15:00','16:30'];
@@ -1281,10 +1266,7 @@ function renderMainSpots() {
                 : inD2 ? ' <span style="font-size:0.6rem;background:var(--accent2);color:#fff;padding:1px 5px;border-radius:1px;margin-left:4px;">Day2</span>' : '';
     return `<div class="s-card${inD1||inD2?' added':''}" id="ms-${s.id}">
       <div class="s-thumb">
-        <div class="thumb-placeholder">
-          <div class="thumb-placeholder-icon"><i class="ti ${s.icon}"></i></div>
-          <div class="thumb-placeholder-label">IMAGE · ${s.name}</div>
-        </div>
+        <img src="${s.img}" alt="${s.name}" style="width:100%;height:100%;object-fit:cover;display:block;">
         <div class="s-area-tag" style="background:${tagBg}">${s.area}</div>
       </div>
       <div class="s-body">
@@ -1322,10 +1304,7 @@ function renderPlanSpots() {
     const tagBg = isYahiko(s) ? 'var(--accent)' : 'var(--accent2)';
     return `<div class="ps-card${inD1||inD2?' added':''}">
       <div class="ps-thumb">
-        <div class="ps-placeholder">
-          <div class="ps-placeholder-icon"><i class="ti ${s.icon}"></i></div>
-          <div class="ps-placeholder-label">IMAGE</div>
-        </div>
+        <img src="${s.img}" alt="${s.name}" style="width:100%;height:100%;object-fit:cover;display:block;">
         <div class="ps-area-tag" style="background:${tagBg}">${s.area}</div>
       </div>
       <div class="ps-info">
@@ -1370,28 +1349,14 @@ function updatePlanCount() {
 
 /* ===================== RENDER WALLPAPER ===================== */
 function buildVisualHTML(hero) {
-  const st = getComputedStyle(document.documentElement);
-  const c1 = st.getPropertyValue('--wp-bg').trim()     || '#0d1a15';
-  const c2 = st.getPropertyValue('--wp-accent').trim()  || '#c5845a';
-  const c3 = st.getPropertyValue('--wp-accent2').trim() || '#4a7c6b';
-  return `
-    <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-         style="position:absolute;inset:0;width:100%;height:100%;">
-      <defs>
-        <linearGradient id="vg${hero.id}" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%"   stop-color="${c1}"/>
-          <stop offset="60%"  stop-color="${c2}" stop-opacity="0.35"/>
-          <stop offset="100%" stop-color="${c3}" stop-opacity="0.5"/>
-        </linearGradient>
-      </defs>
-      <rect width="220" height="80" fill="url(#vg${hero.id})"/>
-      <circle cx="110" cy="40" r="30" fill="none" stroke="${c2}" stroke-width="0.4" opacity="0.25"/>
-      <circle cx="110" cy="40" r="22" fill="none" stroke="${c2}" stroke-width="0.3" opacity="0.18"/>
-    </svg>
+  return `<img src="${hero.img}" alt="${hero.name}"
+    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0.75;">
     <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;pointer-events:none;">
-      <i class="ti ${hero.icon}" style="font-size:20px;color:rgba(255,255,255,0.45);"></i>
-      <span style="font-size:6px;letter-spacing:0.14em;color:rgba(255,255,255,0.3);font-family:'Zen Kaku Gothic New',sans-serif;">${hero.name}</span>
     </div>`;
+}
+
+function makePhotoPh(s) {
+  return `<div class="wp-photo"><img src="${s.img}" alt="${s.name}" style="width:100%;height:100%;object-fit:cover;display:block;opacity:0.8;"></div>`;
 }
 
 function renderWallpaper(day) {
@@ -1416,7 +1381,7 @@ function renderWallpaper(day) {
   const photos  = items.slice(0, 3);
   const empties = Math.max(0, 3 - photos.length);
   photoEl.innerHTML =
-    photos.map(s => `<div class="wp-photo"><div class="wp-photo-ph"><i class="ti ${s.icon}" style="font-size:11px"></i><span>${s.name.slice(0,4)}</span></div></div>`).join('') +
+    photos.map(s => makePhotoPh(s)).join('') +
     Array(empties).fill(emptyPh).join('');
 
   schedEl.innerHTML = `
@@ -1426,7 +1391,7 @@ function renderWallpaper(day) {
         <span class="wp-time">${TIMES[i]}</span>
         <span class="wp-bullet"></span>
         <span class="wp-item-name">${s.name}<span class="wp-item-area">${s.area}エリア</span></span>
-        <div class="wp-row-ph"><i class="ti ${s.icon}"></i></div>
+        <div class="wp-row-ph" style="overflow:hidden;"><img src="${s.img}" alt="${s.name}" style="width:100%;height:100%;object-fit:cover;opacity:0.75;display:block;"></div>
       </div>`).join('')}`;
 }
 
